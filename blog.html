@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+        * {
+          box-sizing: border-box;
+        }
+        
+        /* Add a gray background color with some padding */
+        body {
+          font-family: Arial;
+          padding: 20px;
+          background: #0e1c2b;
+        }
+        
+        /* Header/Blog Title */
+        .header {
+          padding: 30px;
+          font-size: 40px;
+          text-align: center;
+          background: teal;
+          
+        }
+        
+        /* Create two unequal columns that floats next to each other */
+        /* Left column */
+        .leftcolumn {   
+          float: left;
+          width: 75%;
+          color: teal;
+        }
+        
+        /* Right column */
+        .rightcolumn {
+          float: left;
+          width: 25%;
+          padding-left: 20px;
+          color: teal;
+          
+        }
+        
+        /* Fake image */
+        .fakeimg {
+          background-color: teal;
+        }
+        
+        
+        /* Add a card effect for articles */
+        .card {
+           background-color: white;
+           padding: 20px;
+           margin-top: 20px;
+        }
+        
+        /* Clear floats after the columns */
+        .row:after {
+          content: "";
+          display: table;
+          clear: both;
+          
+        }
+        .fa {
+          font-size: 25px;
+          color: #4267B2;
+        }
+
+        
+        /* Footer */
+        .footer {
+          padding: 20px;
+          text-align: center;
+          background: teal;
+          margin-top: 20px;
+        }
+        
+        /* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other */
+        @media screen and (max-width: 800px) {
+          .leftcolumn, .rightcolumn {   
+            width: 100%;
+            padding: 0;
+          }
+        }
+        </style>
+</head>
+<body>
+    
+<div class="header">
+    <h2>Full stack developer</h2>
+  </div>
+  
+  <div class="row">
+    <div class="leftcolumn">
+      <div class="card">
+        <h2>About Fullstack Development</h2>
+        <h5>Today's Technologies</h5>
+        <div>
+        <img class="fakeimg" style="width: 850px;" height="200px" src="C:\Nvs\ComputerProgramming_Image-1024x512.png">
+        </div>
+        <p>Let,s see</p>
+        <p>Full stack developer is a course to study through multiple technologies and learning will  give a good experience.  </p>
+      </div>
+      <div class="card">
+        <h2>Python Book</h2>
+        <h5>To Understand Programming Knowledge</h5>
+        <img class="fakeimg" style="width: 850px;" height="200px" src="C:\Nvs\The-Best-Books.jpg">
+        <p>Let's read</p>
+        <p>Python is commonly used for developing websites and software, task automation, data analysis, and data visualization . Since it's relatively easy to learn, Python has been adopted by many non-programmers such as accountants and scientists,<br> for a variety of everyday tasks, like organizing finances</p>
+      </div>
+    </div>
+    <div class="rightcolumn">
+      <div class="card">
+        <h2>About Me</h2>
+        <img class="fakeimg" style="width: 140px;" height="150px" src="C:\Users\FRHS-6\Desktop\sbi proof\IMG-20210516-WA0003.jpg">
+        <p>I am a Software Engineer</p>
+      </div>
+      <div class="card">
+        <h3>Popular Post</h3>
+        <div><a href="Link1.html">Hyper positioning system</a><br></br></div>
+        <a href="Link2.html">Multi Skilled AI</a><br></br>
+        <a href="Link3.html">Green Hydrogen</a>
+        
+         
+      </div>
+      <div class="card">
+        <h3>Follow Me On</h3>
+        <a href="https://www.facebook.com/"><i class="fa fa-facebook-official"></i></a>
+      </div>
+    </div>
+  </div>
+  
+  <div class="footer">
+    <h2>Full stack developer for growth</h2>
+  </div>
+    
+</body>
+</html>
